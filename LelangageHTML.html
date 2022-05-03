@@ -1,0 +1,102 @@
+﻿<html>
+	
+<head>
+	<title>Le langage HTML</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "le web.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("LelangageHTML");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_content">
+		
+<p></p>
+<p class="rvps8"><span class="rvts43">Le langage HTML</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Structure d'une page HTML</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Voici un code HTML minimaliste, n'affichant rien :</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&lt;!DOCTYPE html&gt;</span></p>
+<p class="rvps2"><span class="rvts6">&lt;html&gt;</span></p>
+<p class="rvps2"><span class="rvts6"> </span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp;&lt;head&gt;</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp;&lt;/head&gt;</span></p>
+<p class="rvps2"><span class="rvts6"> </span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp;&lt;body&gt;</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp;&lt;/body&gt;</span></p>
+<p class="rvps2"><span class="rvts6"> </span></p>
+<p class="rvps2"><span class="rvts6">&lt;/html&gt;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Signification de ces balises fondamentales :</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">La première ligne &lt;!DOCTYPE html&gt; permet de signaler que le document est réalisé en HTML. Il s'agit d'une balise particulière : elle est dite orpheline car elle ne comporte pas de balise de fermeture.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">La balise &lt;html&gt; contient l'intégralité du document.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">La balise &lt;head&gt; va contenir des données qu'on veut transmettre au navigateur mais qui ne seront pas affichées sur la page : le titre à mettre sur l'onglet par exemple.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">La balise &lt;body&gt; va contenir TOUT ce qu'on désire voir s'afficher sur la page.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts41">Soit le programme HTML suivant :</span></p>
+<p class="rvps2"><span class="rvts41"><br/></span></p>
+<p class="rvps2"><span class="rvts41">&lt;h1&gt;Hello World! Ceci est un titre&lt;/h1&gt;</span></p>
+<p class="rvps2"><span class="rvts41">&lt;p&gt;Ceci est un &lt;strong&gt;paragraphe&lt;/strong&gt;. Avez-vous bien compris ?&lt;/p&gt;</span></p>
+<p class="rvps2"><span class="rvts41"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts41"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts41"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts29">Explication :</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts29">Le texte situé entre la balise ouvrante et fermante &lt;h1&gt; est obligatoirement un titre important (il existe des balises &lt;h2&gt;, &lt;h3&gt;......qui sont aussi des titres, mais des titres moins importants (sous-titre)).</span></p>
+<p class="rvps2"><span class="rvts29">La balise &lt;p&gt; permet de définir des paragraphes, enfin, la balise &lt;strong&gt; permet de mettre en évidence un élément important. </span></p>
+<p class="rvps2"><span class="rvts41"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/notepad1.jpg"></p>
+<p></p>
+<p class="rvps6"><span class="rvts13">Créé avec HelpNDoc Personal Edition: </span><a class="rvts14" href="http://www.helpndoc.com/fr">Générateur de documentation complet</a></p>
+</div>
+	
+	</body>
+	
+</html>
+

@@ -1,0 +1,81 @@
+﻿<html>
+	
+<head>
+	<title>Synth&egrave;se</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "le web.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Synthese1");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_content">
+		
+<p></p>
+<p class="rvps8"><span class="rvts43">Synthèse</span></p>
+<p class="rvps10"><span class="rvts22"><br/></span></p>
+<p class="rvps10"><span class="rvts22">Le but est de réaliser une liaison entre chaque pages HTML réalisées :</span></p>
+<p class="rvps10"><span class="rvts22">On souhaite avoir a une page d'accueil ( avec la définition d'un Haiku ), puis en cliquant sur Haiku n°1 on a le premier Haiku et en cliquant sur le second on arrive sur la page n°2 de l'exercice précédent, pour chaque page on mettra un lien permettant de revenir à la page d'accueil comme ci dessous :</span><span class="rvts6"> </span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img width="1094" height="618" alt="" style="padding : 1px;" src="lib/synthHtml.jpg"></p>
+<p class="rvps7"><span class="rvts22">Pour cela on créera des liens hypertextes grâce à l'url de chaque pages.</span></p>
+<p class="rvps7"><span class="rvts22">On aura trois pages HTML :</span></p>
+<p class="rvps7"><span class="rvts22">index.html : page d'accueil</span></p>
+<p class="rvps7"><span class="rvts22">haikui1.html : page de haiku n°1</span></p>
+<p class="rvps7"><span class="rvts22">haiku2.html : page de haiku n°2</span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22">La balise est la suivante : &lt;a href=" </span><span class="rvts24">à compléter selon la situation </span><span class="rvts22">"&lt;/a&gt;</span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22">Les différents liens relatifs :</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NouvelElement7.png"></p>
+<p class="rvps3"><span class="rvts22"><br/></span></p>
+<p class="rvps3"><span class="rvts22"><br/></span></p>
+<p class="rvps3"><span class="rvts22"><br/></span></p>
+<p class="rvps3"><span class="rvts22"><br/></span></p>
+<p></p>
+<p class="rvps6"><span class="rvts13">Créé avec HelpNDoc Personal Edition: </span><a class="rvts14" href="http://www.helpndoc.com/fr/outils-creation-aide">Générateur complet d'aides multi-formats</a></p>
+</div>
+	
+	</body>
+	
+</html>
+

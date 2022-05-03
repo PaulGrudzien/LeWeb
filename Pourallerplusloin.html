@@ -1,0 +1,95 @@
+﻿<html>
+	
+<head>
+	<title>Pour aller plus loin....</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "le web.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Pourallerplusloin");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_content">
+		
+<p></p>
+<p class="rvps8"><span class="rvts43">Pour aller plus loin...</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Le but est de simuler un serveur web avec le logiciel Filius et ainsi connecter un client avec la page web que l'on vient de créer comme sur l'exemple ci-dessous (j'ai nommé mon site : "www.monsite.fr" ) :</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps3"><img width="1175" height="442" alt="" style="padding : 1px;" src="lib/serverweb1.jpg"></p>
+<p class="rvps3"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22">Récupérez le fichier Filius : </span><a class="rvts23" href="documents/ServerWeb.fls">serverWeb</a></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22">Ouvrez ce fichier sous Filius.</span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22">En vous mettant en simulation (triangle vert) :</span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps3"><img width="1319" height="686" alt="" style="padding : 1px;" src="lib/serverweb0.jpg"></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22">Allez sur le serveur DNS et donnez un nom à votre site.</span></p>
+<p class="rvps7"><span class="rvts22">Allez dans ServeurWeb puis d'éditeur de textes.</span></p>
+<p class="rvps7"><span class="rvts22">Faites un copier/coller de votre page HTML comme ci-dessous :</span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps3"><img width="1160" height="613" alt="" style="padding : 1px;" src="lib/serverweb12.jpg"></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22">En cliquant sur Fichier (de la fenetre de l'éditeur de textes) allez sur "enregistrer sous" puis allez dans le dossier webserver. Enregistrez votre fichier HTML sous le nom de fichier : index.html faites Enregistrer.</span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22">Constatez le bon fonctionnement de votre site internet depuis le PC Client.</span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p class="rvps7"><span class="rvts22"><br/></span></p>
+<p></p>
+<p class="rvps6"><span class="rvts13">Créé avec HelpNDoc Personal Edition: </span><a class="rvts14" href="http://www.helpndoc.com/fr/outils-creation-aide">Créer des aides HTML, DOC, PDF et des manuels depuis une même source</a></p>
+</div>
+	
+	</body>
+	
+</html>
+
